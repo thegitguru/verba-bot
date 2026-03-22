@@ -296,7 +296,11 @@ const VERBA_KNOWLEDGE = {
       { name: "tan_deg", desc: "Tangent approximation in degrees." }
     ], install: "verba install math_plus" },
     { name: "date_helper", desc: "Date formatting and simple date checks.", versions: ["1.0.0"], functions: [{ name: "get_full_date", desc: "Return a YYYY-M-D style date string." }, { name: "is_weekend", desc: "Simple weekend helper." }], install: "verba install date_helper" },
-    { name: "test_pkg", desc: "Sample package in the Verba registry.", versions: ["1.0.0"], functions: [], install: "verba install test_pkg" }
+    { name: "test_pkg", desc: "Sample package in the Verba registry.", versions: ["1.0.0"], functions: [], install: "verba install test_pkg" },
+    { name: "dotenv", desc: "Lightweight library for loading environment variables from .env files into the process environment.", versions: ["1.0.0"], functions: [
+      { name: "load_dotenv", desc: "Load variables from a .env file (defaults to .env) into the process environment." },
+      { name: "get", desc: "Get an environment variable value with an optional default." }
+    ], install: "verba install dotenv" }
   ],
   architecture: [
     { file: "verba.json", desc: "Project manifest storing metadata and dependencies." },
